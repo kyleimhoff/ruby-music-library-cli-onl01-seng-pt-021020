@@ -33,6 +33,6 @@ def add_song(song)
   songs << song unless song.include?(song)
 end
 def genres 
-  songs.collect{|song| song,genre}.uniq 
+  songs.collect{|song| song.genre}.uniq 
 end
 end
